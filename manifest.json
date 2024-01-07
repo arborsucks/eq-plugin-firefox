@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "EQ",
+  "version": "1.0",
+
+  "description": "Add Equalizer to website to change how audio sounds.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "Equalizer",
+    "default_popup": "index.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.soundcloud.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
+
+
