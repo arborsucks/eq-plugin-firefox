@@ -3,7 +3,6 @@
     <head>
       <meta charset="utf-8" />
       <link rel="stylesheet" href="style.css" />
-      <script src="main.js"></script> 
     </head>
 
     <body>
@@ -12,45 +11,63 @@
         <div id="equalizer">
           <div class="equalizer-bar">
             <input class="bar" id="slider1" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>35hz</span>
-              <input class="reset-btn" type="button" value="Reset">            
+            <div>
+              <span>35</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider1" />  
+            </div>          
           </div>
 
           <div class="equalizer-bar">
             <input class="bar" id="slider2" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>120hz</span>
-              <input class="reset-btn" type="button" value="Reset">    
+            <div>
+              <span>120</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider2" />  
+            </div>  
           </div>
           
           <div class="equalizer-bar">
             <input class="bar" id="slider3" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>350hz</span>
-              <input class="reset-btn" type="button" value="Reset">    
+            <div>
+              <span>350</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider3" />    
+            </div>
           </div>
           
           <div class="equalizer-bar">
             <input class="bar" id="slider4" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>1khz</span>
-              <input class="reset-btn" type="button" value="Reset">    
+            <div>
+              <span>1000</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider4" />    
+            </div>
           </div>
           
           <div class="equalizer-bar">
             <input class="bar" id="slider5" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>2.5khz</span>
-              <input class="reset-btn" type="button" value="Reset">    
-          </div>        
+            <div>
+              <span>2500</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider5" />    
+            </div>
+          </div>   
+
           <div class="equalizer-bar">
             <input class="bar" id="slider6" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>6khz</span>
-              <input class="reset-btn" type="button" value="Reset">    
+            <div>
+              <span>6000</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider6" />  
+            </div>  
           </div>
           
           <div class="equalizer-bar">
             <input class="bar" id="slider7" type="range" orient="vertical" min="-12" max="12" step="1" value="0" />
-            <span>18khz</span>
-              <input class="reset-btn" type="button" value="Reset">    
+            <div>
+              <span>18000</span>
+              <input class="reset-btn" type="button" value="Reset" data-slider="slider7" />  
+            </div>  
           </div>
         </div>
       </div>
+
+      <script src="./js/jquery.js"></script>
+      <script src="./js/main.js"></script> 
     </body>
   </html>
