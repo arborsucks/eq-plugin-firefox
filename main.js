@@ -9,3 +9,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sliders = document.querySelectorAll(".bar");
+
+  sliders.forEach(slider => {
+    // Add change event listener to each slider
+    slider.addEventListener("input", function() {
+      // Save slider value to localStorage when it changes
+      localStorage.setItem(slider.id, slider.value);
+    });
+
+    // Retrieve slider value from localStorage on page load
+    const savedValue = localStorage.getItem(slider.id);
+    if (savedValue !== null) {
+      slider.value = savedValue;
+    }
+  });
+});
